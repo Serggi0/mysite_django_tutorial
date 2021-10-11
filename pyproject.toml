@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mysite"
+version = "0.1.0"
+description = ""
+authors = ["Serggi0 <serve4mia@gmail.com>"]
+packages = [
+  { include = "polls" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "^0.19.1"
+Django = "^3.2.8"
+gunicorn = "^20.1.0"
+heroku = "^0.1.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
